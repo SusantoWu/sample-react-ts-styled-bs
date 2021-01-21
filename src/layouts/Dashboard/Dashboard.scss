@@ -1,3 +1,7 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
 .dashboard {
   position: relative;
   height: 100%;
@@ -12,10 +16,40 @@
     top: 0;
     bottom: 0;
     margin-top: 40px;
+    z-index: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    @include media-breakpoint-down(md) {
+      width: 70%;
+      display: none;
+
+      .is-open & {
+        display: block;
+      }
+    }
   }
 
   &-right {
     height: 100%;
     padding-top: 40px;
+  }
+
+  &-btn {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    z-index: 1;
+
+    @include media-breakpoint-down(md) {
+      display: inline-block;
+
+      .is-open & {
+        left: 70%;
+      }
+    }
   }
 }

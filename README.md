@@ -1,6 +1,25 @@
-# Getting Started with Create React App
+# Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project built with:
+- create-react-app
+- React
+- Typescript
+- Redux
+- React Router
+- Sass
+- Bootstrap v5
+
+## Structures
+```
+-- src
+--- clients // includes data fetching services eg. REST, file, etc
+--- components // common re-useable components
+--- hooks // common re-useable functions for component
+--- layouts // container components for html structure
+--- pages // components with routes
+--- store // redux related stuffs
+--- styles // high level css for whole application
+```
 
 ## Available Scripts
 
