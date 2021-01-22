@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import React, { FunctionComponent } from 'react';
 import { useSelector } from 'react-redux';
 import { getRequest, Request, RootState, ApplicationAction } from 'store';
 import './Loader.scss';
